@@ -3,8 +3,10 @@
 ## Описание
 В этом задании необходимо убрать повторения из списка хештегов и привести их к нижнему регистру. Результатом должна быть строка. Хештеги в строке должны быть разделены запятой и пробелом: `tag1, tag2, tag3`.
 
+```js
 var normalizeHashTags = require('./index.js');
 console.info(normalizeHashTags(['web', 'pravo', 'JavaScript', 'Pravo', 'script', 'programming']));
+```
 // "web, pravo, javascript, script, programming"
 
 ## Условия
