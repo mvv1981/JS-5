@@ -11,4 +11,12 @@ assert.deepEqual(
     ' содержит хэштеги "web, pravo, javascript, script, programming"'
 );
 
+assert.deepEqual(
+    normalizeHashTags([]), '', 'При пустом массиве получим пустую строку'
+);
+
+assert.deepEqual(
+    normalizeHashTags(['привет', 'привет', 'привет', 'привет', 'привет']), 'привет', 'При множественном поветорении получим"привет"'
+);
+
 console.info('OK!');
