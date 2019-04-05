@@ -11,4 +11,10 @@ assert.deepEqual(
     ' содержит хэштеги "web, pravo, javascript, script, programming"'
 );
 
-console.info('OK!');
+assert.deepEqual(
+    normalizeHashTags([]),
+    '',
+    'При пустом массиве возвращается пустая строка'
+);
+
+console.info('Unit tests is OK!');
